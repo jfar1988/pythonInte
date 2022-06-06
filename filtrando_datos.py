@@ -14,7 +14,7 @@ DATA = [
         'language': 'javascript',
     },
     {
-        'name': 'HÃ©ctor',
+        'name': 'Héctor',
         'age': 19,
         'organization': 'Platzi',
         'position': 'Associate',
@@ -74,14 +74,14 @@ def run():
     #list comprehesions
     # all_python_devs = [worker["name"] for worker in DATA if worker['language'] == 'python']
     #funciones de orden superior
-    all_python_devs = list(filter(lambda worker: worker['language'] == 'python', DATA))
-    all_python_devs = list(map(lambda worker: worker['name'], all_python_devs))
-    # all_platzi_workers = [worker["name"] for worker in DATA if worker['organization']== 'Platzi']
+    # all_python_devs = list(filter(lambda worker: worker['language'] == 'python', DATA))
+    # all_python_devs = list(map(lambda worker: worker['name'], all_python_devs))
+    all_platzi_workers = [worker["name"] for worker in DATA if worker['organization']== 'Platzi']
     # adults = list(filter(lambda worker: worker['age']>= 18, DATA))
     # adults = list(map(lambda worker: worker['name'], adults))
     # old_people =list(map(lambda worker: worker | {'old': worker['age']>70}, DATA))
 
-    for worker in all_python_devs:
+    for worker in  all_platzi_workers:
         print(worker)
 
 if __name__ == "__main__":
