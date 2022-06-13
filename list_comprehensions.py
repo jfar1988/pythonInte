@@ -9,6 +9,9 @@ def run():
     # reto=[i for i in range(1,99999) if i%36==0]
 
     # print(reto)
+   
+
+    # punto 4
 
     for i in range(1,101):
         if i%15==0:
