@@ -2,14 +2,18 @@
 from ast import Lambda
 from functools import reduce
 
+
 #Lambda Function
 # palindromo = lambda String: String == String[::-1]
-# print(palindromo('dabalearrozalazorraelabad'))
+# print(palindromo(""))
 
 #Funcion normal
-# def palindromo(string): 
-#     return string==string[::-1]
-# print(palindromo('ana'))
+def palindromo():
+    string = input("Ingrese una palabra: ") 
+    assert len(string) > 1, "No se puede ingresar una cadena vacía o una sola letra"
+    assert string == int,"No se puede ingresar un numero"
+    return string==string[::-1]
+print(palindromo())
 
 #High order fuctions:
 
